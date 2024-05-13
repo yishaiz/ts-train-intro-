@@ -1,30 +1,16 @@
-// A FIFO collection
-class Queue<T> {
-  data = [];
-  push(item: T) {
-    this.data.push(item);
-  }
+let exampleAny: any;
+let exampleUnknown: unknown;
 
-  pop(): T {
-    return this.data.shift();
-  }
+// any
+exampleAny = 123;
+exampleAny = 'Hello';
+
+// unknown
+exampleUnknown = 123;
+exampleUnknown = 'Hello';
+
+if (typeof exampleUnknown === 'string') {
+  exampleUnknown.trim();
 }
 
-// class NumberQueue extends Queue {
-//   push(item: number) {
-//     super.push(item);
-//   }
-
-//   pop(): number {
-//     return super.pop();
-//   }
-// }
-
-// const queue = new Queue();
-
-const queue = new Queue<number>();
-queue.push(123);
-queue.push(456);
-
-console.log(queue.pop().toPrecision(1));
-console.log(queue.pop().toPrecision(1));
+let unknownSetToString: string = exampleUnknown;
