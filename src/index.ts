@@ -24,7 +24,7 @@ class Queue<T> {
 
 const queue = new Queue<number>();
 queue.push(123);
-queue.push('Hello World');
+queue.push(456);
 
 console.log(queue.pop().toPrecision(1));
 console.log(queue.pop().toPrecision(1));
