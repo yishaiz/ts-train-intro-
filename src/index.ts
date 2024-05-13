@@ -1,12 +1,28 @@
-let add: (a: number, b: number) => number;
+// A FIFO collection
+class Queue {
+  data = [];
+  push(item) {
+    this.data.push(item);
+  }
 
-add = function add(a: number, b: number) {
-  return a + b;
-};
+  pop() {
+    return this.data.shift();
+  }
+}
 
-// let array: number[] = [1, 2, 3];
+class NumberQueue extends Queue {
+  push(item: number) {
+    super.push(item);
+  }
 
-// let message: string = 'Hello World!';
-// message=234
+  pop(): number {
+    return super.pop();
+  }
+}
 
-// console.log(message);
+const queue = new NumberQueue();
+queue.push(123);
+queue.push(456);
+
+console.log(queue.pop().toPrecision(1));
+console.log(queue.pop().toPrecision(1));
