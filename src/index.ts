@@ -1,3 +1,7 @@
+
+
+
+/* 
 let exampleAny: any;
 let exampleUnknown: unknown;
 
@@ -14,3 +18,5 @@ if (typeof exampleUnknown === 'string') {
 }
 
 let unknownSetToString: string = exampleUnknown;
+
+*/
