@@ -1,4 +1,3 @@
-import { isPalidrome } from './utils';
+console.log('Logged in use', process.env.USER);
 
-console.log(isPalidrome('madam')); // true
-console.log(isPalidrome('mada')); // true
+declare const process: any;
