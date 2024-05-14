@@ -1,8 +1,21 @@
-import { isPalidrome } from 'ts-npm-package-palindrome';
+console.log('Hello World');
 
-console.log('use npm package');
+const delay = (ms: number) => new Promise((res) => setTimeout(res, ms));
+const mainAsync = async () => {
+  await delay(1000);
+  console.log('1s');
 
-console.log(isPalidrome('madam')); // true
-console.log(isPalidrome('mada')); // true
+  await delay(1000);
+  console.log('2s');
 
-// isPalidrome('1')
+  await delay(1000);
+  console.log('3s');
+};
+
+mainAsync();
+
+// const main = () => {
+//   setTimeout(() => {
+//     console.log('1');
+//   }, 1000);
+// };
