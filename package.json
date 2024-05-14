@@ -11,7 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^20.12.11",
     "nodemon": "^3.1.0",
+    "ts-npm-package-palindrome": "^1.0.0",
     "typescript": "^5.4.5"
   }
 }

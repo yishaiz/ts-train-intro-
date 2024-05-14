@@ -1,3 +1,8 @@
-console.log('Logged in use', process.env.USER);
+import { isPalidrome } from 'ts-npm-package-palindrome';
 
-declare const process: any;
+console.log('use npm package');
+
+console.log(isPalidrome('madam')); // true
+console.log(isPalidrome('mada')); // true
+
+// isPalidrome('1')
