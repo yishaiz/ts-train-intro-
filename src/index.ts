@@ -1,4 +1,5 @@
 console.log('Hello World');
+console.log('using ts-node');
 
 const delay = (ms: number) => new Promise((res) => setTimeout(res, ms));
 const mainAsync = async () => {
